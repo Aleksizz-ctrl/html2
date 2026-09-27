@@ -133,3 +133,75 @@ body {
         flex-direction: column;
     }
 }
+
+/* ===================================
+   TASK 2: CSS GRID LAYOUT
+=================================== */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header  header"
+        "sidebar content"
+        "footer  footer";
+    gap: 20px;
+    min-height: 500px;
+}
+
+.grid-header {
+    grid-area: header;
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(20, 184, 166, 0.2);
+}
+
+.grid-sidebar {
+    grid-area: sidebar;
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(20, 184, 166, 0.2);
+}
+
+.grid-sidebar ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.grid-sidebar li {
+    padding: 8px 0;
+    color: var(--text-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.grid-content {
+    grid-area: content;
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(20, 184, 166, 0.2);
+}
+
+.grid-footer {
+    grid-area: footer;
+    background-color: var(--card-bg);
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid rgba(20, 184, 166, 0.2);
+    font-size: 0.9rem;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "content"
+            "footer";
+    }
+}
