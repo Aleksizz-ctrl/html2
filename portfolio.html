@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment #2 - Part 3: Rider Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo"><span>Dev</span>Flex</div>
+        <nav class="nav-links">
+            <a href="index.html">Part 1 (Flexbox)</a>
+            <a href="grid.html">Part 2 (Grid)</a>
+            <a href="portfolio.html" class="active">Part 3 (Portfolio)</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Rider & Web Developer Portfolio</h1>
+                <p>Welcome! I'm a web developer and a licensed motorcycle rider. Coding keeps my mind sharp, but riding gives me absolute freedom on the road.</p>
+            </div>
+        </section>
+
+        <section class="contact-section" style="margin-top: 0; margin-bottom: 40px;">
+            <h2>My Current Garage & Dream Goal</h2>
+            <p style="margin-top: 10px; margin-bottom: 20px; font-size: 1.1rem; line-height: 1.6;">
+                I've officially earned my motorcycle license and active riding status. My ultimate goal is to build high-performance web applications and eventually own all 12 superbikes showcased in Part 2!
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+                <img src="bike1.jpg" alt="My Bike 1" style="width: 100%; height: 250px; border-radius: 12px; object-fit: cover;">
+                <img src="bike2.jpg" alt="My Bike 2" style="width: 100%; height: 250px; border-radius: 12px; object-fit: cover;">
+                <img src="bike3.jpg" alt="My Bike 3" style="width: 100%; height: 250px; border-radius: 12px; object-fit: cover;">
+            </div>
+        </section>
+
+        <h2 class="section-title">Completed Assignment Modules</h2>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <div class="card-image-wrapper">
+                    <img src="bmw.jpg" alt="Flexbox Project">
+                </div>
+                <div class="card-content">
+                    <h3>Part 1: Flexbox Layouts</h3>
+                    <p>Building a responsive navigation bar and interactive product card collection using CSS Flexbox properties.</p>
+                    <a href="index.html" class="btn">View Part 1</a>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="card-image-wrapper">
+                    <img src="ducati.jpg" alt="Grid Project">
+                </div>
+                <div class="card-content">
+                    <h3>Part 2: CSS Grid Systems</h3>
+                    <p>Constructing a complex dashboard page layout with template areas and my dream 12-item superbike gallery.</p>
+                    <a href="grid.html" class="btn">View Part 2</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="grid-footer" style="margin-top: 60px;">
+        <p>&copy; 2026 DevFlex Superbikes. Ride Safe & Code Clean.</p>
+    </footer>
+
+</body>
+</html>
